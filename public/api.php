@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__ . './config/Database.php';
+require_once __DIR__ . '/config.php';
 
 class API {
     function Select() {
-        $db = new Database;
+        $db = new Connect;
         $summer = array();
         $data = $db->prepare('SELECT * FROM summer');
         $data->execute();
@@ -17,14 +17,16 @@ class API {
             );
         }
 
-        return json_encode($summer)
+        return json_encode($summer);
     }
 
-    $API = new API;
-    header('Content-Type: application/json');
-    echo $API->Select();
 
 
 }
 
+    $API = new API;
+
+    header('Content-Type: application/json');
+
+    echo $API->Select();
 ?>
