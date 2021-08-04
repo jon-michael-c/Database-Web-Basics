@@ -5,10 +5,11 @@ $response = array();
 
 if($con) {
     echo "DB CONNECTED";
-    $sql = "SELECT * from summer";
+    $sql = "SELECT * FROM summer";
     $result = mysqli_query($con, $sql);
 
     if ($result) {
+	$i=0;
         while($row = mysqli_fetch_assoc($result)) {
             $response[$i]['Year'] = $row ['Year'];
             $response[$i]['City'] = $row ['City'];
@@ -19,7 +20,7 @@ if($con) {
         echo json_encode($response, JSON_PRETTY_PRINT);
     }
 } else {
-    echo "DB CONNECTION FALIED"
+    echo "DB CONNECTION FALIED";
 }
 
 
