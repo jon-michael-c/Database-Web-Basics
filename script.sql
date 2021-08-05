@@ -24,7 +24,6 @@ CREATE TABLE titles (
         Title VARCHAR(255) NOT NULL,
         Director VARCHAR(255) NOT NULL,
         Country VARCHAR(255) NOT NULL,
-        Date_Added VARCHAR(255) NOT NULL ,
         Released VARCHAR(255) NOT NULL,
         Rating VARCHAR(255) NOT NULL,
         Duration VARCHAR(255) NOT NULL,
