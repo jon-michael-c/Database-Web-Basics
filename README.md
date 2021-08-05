@@ -14,8 +14,7 @@ Creating a simple database, setting up an API server, and deploying a webpage. T
 <h3><a href="http://34.121.233.142">Preview of Web App</a></h3>
 
 # Creating a Database
-MySQL was used for the back-end database for this web application. It was installed using `apt install mysql` command on linux.
-From there, `mysql -u root -p` command can be used to enter queries into the databases.`SHOW DATABASES` displays all the current databases.
+MySQL was used for the back-end database for this web application. It was installed using `apt install mysql` command on linux. By default, the installation process should prompt you to configure the database and accounts that will be using it. From there, `mysql -u root -p` command can be used to enter queries into the databases.`SHOW DATABASES` displays all the current databases.
 
 ![Screenshot from 2021-08-05 12-54-19](https://user-images.githubusercontent.com/53241212/128390293-6ab49d9c-b33c-4772-ac0c-5795fa02a4d8.png)
 
@@ -33,6 +32,12 @@ To make a table select a database using `USE [DBNAME]` and `CREATE TABLE [TBNAME
 ![Screenshot from 2021-08-05 13-19-46](https://user-images.githubusercontent.com/53241212/128393737-e3a88962-837b-4565-be53-55c77ad6e1bd.png)
 
 <h3>Inserting records and deleting records</h3>
+
+Inserting an entry into table can be done through `INSERT INTO` query. Deleting an entry is done by `DELETE FROM [TBNAME] WHERE [CONDITION]`.
+
+![Screenshot from 2021-08-05 13-45-00](https://user-images.githubusercontent.com/53241212/128396776-754a0eb9-2149-4ead-88d7-d71d3d0c8666.png)
+
+![Screenshot from 2021-08-05 13-46-33](https://user-images.githubusercontent.com/53241212/128397002-b02b27f3-d554-44df-897c-9da4a4e0e214.png)
 
 <h3>Updating records</h3>
 
