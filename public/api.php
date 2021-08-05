@@ -9,6 +9,7 @@ if($con) {
 
     if ($result) {
 	header("Content-Type: application/json");
+    header("Access-Control-Allow-Origin: *");
 	$i=1;
         while($row = mysqli_fetch_assoc($result)) {
             $response[$i]['Year'] = $row ['Year'];
