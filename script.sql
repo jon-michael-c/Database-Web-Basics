@@ -14,7 +14,7 @@ DELETE FROM Person WHERE Id=3;
 -- Updating Table
 UPDATE Person SET last_name = 'Jackson' WHERE Id=2; 
 
--- Dropping Table and Database
+-- Dropping Table 
 DROP TABLE Person;
 
 -- Importing CSV
@@ -36,4 +36,7 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
+
+-- Dropping Database
+DROP DATABASE testdb;
 
