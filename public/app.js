@@ -16,7 +16,7 @@ searchBar.addEventListener('keyup', (e) => {
 // Grab API
 const loadTitles = async () => {
     try {
-        const res = await fetch('http://34.121.233.142/Database-Web-Basics/public/api.php');
+        const res = await fetch('http://34.121.233.142/Database-Web-Basics/public/read.php');
         titleData = await res.json();
         console.log(titleData);
         displayData(titleData);
