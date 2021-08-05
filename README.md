@@ -14,8 +14,18 @@ Creating a simple database, setting up an API server, and deploying a webpage. T
 <h3><a href="http://34.121.233.142/Database-Web-Basics/public/">Preview of Web App</a></h3>
 
 # Creating a Database
-MySQL was used for the back-end database for this web application. 
+MySQL was used for the back-end database for this web application. It was installed using `apt install mysql` command on linux.
+From there, `mysql -u root -p` command can be used to enter queries into the databases.`SHOW DATABASES` displays all the current databases.
 
+![Screenshot from 2021-08-05 12-54-19](https://user-images.githubusercontent.com/53241212/128390293-6ab49d9c-b33c-4772-ac0c-5795fa02a4d8.png)
+
+
+
+
+<h3>Creating Database and Table</h3>
+Use `CREATE DATABASE [DBNAME]` to create an database.
+
+![Screenshot from 2021-08-05 12-56-22](https://user-images.githubusercontent.com/53241212/128390535-5d17d5d2-6840-4ddf-8cee-340a26ea4085.png)
 
 # Creating an API Server
 
