@@ -1,5 +1,6 @@
 <?php
     header("Content-type:application/json");
+    header("Access-Control-Allow-Origin: *");
     $con = mysqli_connect("localhost", "root", "12345", "testdb");
     
     if(!$con){

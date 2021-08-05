@@ -19,18 +19,18 @@ DROP TABLE Person;
 
 -- Importing CSV
 CREATE TABLE titles (
-        ID VARCHAR(255) NOT NULL,
-        Form VARCHAR(255) NOT NULL,
-        Title VARCHAR(255) NOT NULL,
-        Director VARCHAR(255) NOT NULL,
-        Cast VARCHAR(255) NOT NULL,
-        Country VARCHAR(255) NOT NULL,
-        Added VARCHAR(255) NOT NULL,
-        Released VARCHAR(255) NOT NULL,
-        Rating VARCHAR(255) NOT NULL,
-        Duration VARCHAR(255) NOT NULL,
-        Category VARCHAR(255) NOT NULL,
-        Descripiton VARCHAR(255) NOT NULL
+        ID VARCHAR(700) NOT NULL,
+        Form VARCHAR(700) NOT NULL,
+        Title VARCHAR(700) NOT NULL,
+        Director VARCHAR(700) NOT NULL,
+	Cast VARCHAR(700) NOT NULL,
+        Country VARCHAR(700) NOT NULL,
+        Added VARCHAR(700) NOT NULL,
+        Released VARCHAR(700) NOT NULL,
+        Rating VARCHAR(700) NOT NULL,
+        Duration VARCHAR(700) NOT NULL,
+        Category VARCHAR(700) NOT NULL,
+	Descripition VARCHAR(1000) NOT NULL
 );
 
 LOAD DATA LOCAL INFILE '/var/www/html/Database-Web-Basics/netflix_titles.csv'
@@ -38,5 +38,5 @@ INTO TABLE titles
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS
+IGNORE 200 ROWS
 
