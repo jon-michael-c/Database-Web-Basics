@@ -11,7 +11,7 @@ Creating a simple database, setting up an API server, and deploying a webpage. T
   <li><a href="https://console.cloud.google.com/getting-started">Google Cloud Platform (For Deployment)</a></li>
 </ul>
 
-<h3><a href="http://34.121.233.142/Database-Web-Basics/public/">Preview of Web App</a></h3>
+<h3><a href="http://34.121.233.142">Preview of Web App</a></h3>
 
 # Creating a Database
 MySQL was used for the back-end database for this web application. It was installed using `apt install mysql` command on linux.
