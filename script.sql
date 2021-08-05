@@ -20,7 +20,7 @@ DROP TABLE Person;
 -- Importing CSV
 CREATE TABLE titles (
         ID VARCHAR(255) NOT NULL,
-        Type VARCHAR(255) NOT NULL,
+        Form VARCHAR(255) NOT NULL,
         Title VARCHAR(255) NOT NULL,
         Director VARCHAR(255) NOT NULL,
         Country VARCHAR(255) NOT NULL,
