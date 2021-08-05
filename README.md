@@ -19,8 +19,6 @@ MySQL was used for the back-end database for this web application. It was instal
 ![Screenshot from 2021-08-05 12-54-19](https://user-images.githubusercontent.com/53241212/128390293-6ab49d9c-b33c-4772-ac0c-5795fa02a4d8.png)
 
 
-
-
 <h3>Creating Database and Table</h3>
 
 Use `CREATE DATABASE [DBNAME]` to create an database.
@@ -41,10 +39,44 @@ Inserting an entry into table can be done through `INSERT INTO` query. Deleting 
 
 <h3>Updating records</h3>
 
+Updating records can be accomplished by `UPDATE [TBNAME] SET [VALUE] WHERE [CONDITION]`.
+
+![Screenshot from 2021-08-05 13-48-06](https://user-images.githubusercontent.com/53241212/128397734-c0b3b94f-3342-4a49-8418-6f556bdac10c.png)
 
 <h3>Dropping table(s) and database</h3>
 
+To drop tables and databases, use `DROP TABLE` or `DROP DATABASE`.
+
+![Screenshot from 2021-08-05 13-53-26](https://user-images.githubusercontent.com/53241212/128397829-201f9dc8-532e-4e7e-886c-694e7541e5c3.png)
+
 <h3>Importing from CSV</h3>
+
+Putting a csv into a table set can be completed by using SQL's `LOAD DATA LOCAL INFILE` query. First you must create the table on which you are placing the data into. Then specify the file location and enter the proper csv parameters. 
+<br/>
+<br/>
+For example, in this project, a csv file was importing from <a href="https://www.kaggle.com/the-guardian/olympic-games/">Kaggle<a> with Summer Olympics data. This file can be found under './summer.csv' in the repository.
+  
+  
+<pre><code>CREATE TABLE summer (
+        Year INT NOT NULL,
+        City VARCHAR(255) NOT NULL,
+        Sport VARCHAR(255) NOT NULL,
+        Discipline VARCHAR(255) NOT NULL,
+        Athlete VARCHAR(255) NOT NULL ,
+        Country VARCHAR(255) NOT NULL,
+        Gender VARCHAR(255) NOT NULL,
+        Event VARCHAR(255) NOT NULL,
+        Medal VARCHAR(255) NOT NULL
+);
+
+LOAD DATA LOCAL INFILE '/var/www/html/Database-Web-Basics/summer.csv'
+INTO TABLE summer
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROW
+  </code></pre>
+  
 
 
 # Creating an API Server
