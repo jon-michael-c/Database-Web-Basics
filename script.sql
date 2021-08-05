@@ -23,6 +23,7 @@ CREATE TABLE titles (
         Form VARCHAR(255) NOT NULL,
         Title VARCHAR(255) NOT NULL,
         Director VARCHAR(255) NOT NULL,
+        Co-Director VARCHAR(255) NOT NULL,
         Country VARCHAR(255) NOT NULL,
         Released VARCHAR(255) NOT NULL,
         Rating VARCHAR(255) NOT NULL,
@@ -36,5 +37,5 @@ INTO TABLE titles
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
-IGNORE 31 ROWS
+IGNORE 1 ROWS
 
