@@ -13,7 +13,7 @@ if($con) {
 	$i=1;
         while($row = mysqli_fetch_assoc($result)) {
             $response[$i]['ID'] = $row ['ID'];
-            $response[$i]['Type'] = $row ['Type'];
+            $response[$i]['Form'] = $row ['Form'];
             $response[$i]['Director'] = $row ['Director'];
             $response[$i]['Country'] = $row ['Country'];
             $response[$i]['Date_Added'] = $row ['Date_Added'];
