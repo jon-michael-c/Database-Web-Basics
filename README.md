@@ -76,7 +76,10 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROW
   </code></pre>
-  
+<br/>
+<br/>
+
+<h3>Link to SQL script can be found under <code>./script.sql</code> in the repository.</h3>
 
 
 # Creating an API Server
