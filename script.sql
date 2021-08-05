@@ -18,19 +18,20 @@ UPDATE Person SET last_name = 'Jackson' WHERE Id=2;
 DROP TABLE Person;
 
 -- Importing CSV
-CREATE TABLE summer (
-        Year INT NOT NULL,
-        City VARCHAR(255) NOT NULL,
-        Sport VARCHAR(255) NOT NULL,
-        Discipline VARCHAR(255) NOT NULL,
-        Athlete VARCHAR(255) NOT NULL ,
-        Country VARCHAR(255) NOT NULL,
-        Gender VARCHAR(255) NOT NULL,
-        Event VARCHAR(255) NOT NULL,
-        Medal VARCHAR(255) NOT NULL
+CREATE TABLE titles (
+        ID VARCHAR(255) NOT NULL,
+        Type VARCHAR(255) NOT NULL,
+        Title VARCHAR(255) NOT NULL,
+        Director VARCHAR(255) NOT NULL,
+        Date-Added VARCHAR(255) NOT NULL ,
+        Released VARCHAR(255) NOT NULL,
+        Rating VARCHAR(255) NOT NULL,
+        Duration VARCHAR(255) NOT NULL,
+        Category VARCHAR(255) NOT NULL,
+        Descripiton VARCHAR(255) NOT NULL
 );
 
-LOAD DATA LOCAL INFILE '/var/www/html/Database-Web-Basics/summer.csv'
+LOAD DATA LOCAL INFILE '/var/www/html/Database-Web-Basics/netflix_titles.csv'
 INTO TABLE summer
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
