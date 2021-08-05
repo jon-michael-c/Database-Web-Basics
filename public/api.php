@@ -15,8 +15,9 @@ if($con) {
             $response[$i]['ID'] = $row ['ID'];
             $response[$i]['Form'] = $row ['Form'];
             $response[$i]['Director'] = $row ['Director'];
-            $response[$i]['Co_Director'] = $row ['Co_Director'];
+            $response[$i]['Cast'] = $row ['Cast'];
             $response[$i]['Country'] = $row ['Country'];
+            $response[$i]['Added'] = $row ['Added'];
             $response[$i]['Released'] = $row ['Country'];
             $response[$i]['Rating'] = $row ['Rating'];
             $response[$i]['Duration'] = $row ['Duration'];
