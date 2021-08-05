@@ -22,7 +22,7 @@ if($con) {
             $response[$i]['Rating'] = $row ['Rating'];
             $response[$i]['Duration'] = $row ['Duration'];
             $response[$i]['Category'] = $row ['Category'];
-            $response[$i]['Descripition'] = $row ['Descripition'];
+            $response[$i]['Descripiton'] = $row ['Descripiton'];
             $i++;
         }
 

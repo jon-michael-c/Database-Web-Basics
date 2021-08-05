@@ -28,3 +28,11 @@ h1 {
     border-radius: 5px;
     font-size: 15px;
 }
+
+#title-list li {
+    background-color: rgba(0, 0, 0, 0.582);
+    margin: 10px;
+    padding: 100px;
+    border-radius: 10px;
+    list-style: none;
+}

@@ -1,40 +1,38 @@
-const summerList = document.getElementById('summer-list');
+const summerList = document.getElementById('title-list');
 const searchBar = document.getElementById('searchBar');
 const status = document.getElementById('status');
-let summerdata = [];
+let titleData = [];
 
 // Search Bar
 searchBar.addEventListener('keyup', (e) => {
     const target = e.target.value;
-    const filteredAthletes = summerdata.filter( (athlete) => {
-        return athlete.Athlete.includes(target) || athlete.country.includes(target);
+    const filteredtitles = titleData.filter( (title) => {
+        return title.title.includes(target) || title.country.includes(target);
     });
 
-    console.log(filteredAthletes);
+    console.log(filteredtitles);
 });
 
 // Grab API
-const loadSummer = async () => {
+const loadTitles = async () => {
     try {
         const res = await fetch('http://34.121.233.142/Database-Web-Basics/public/api.php');
-        summerdata = await res.json();
-        status.innerHTML = "API CONNECTED";
-        console.log(summerdata);
-        displayData(summerdata);
+        titleData = await res.json();
+        console.log(titleData);
+        displayData(titleData);
     } catch (err) {
-        status.innerHTML = "API NOT CONNECTED";
         console.error(err);
     }
 };
 
 // Display Results
-const displayData = (athletes) => {
-    const htmlString = athletes
-        .map((athlete) => {
+const displayData = (titles) => {
+    const htmlString = titles
+        .map((title) => {
             return `
             <li class="entry">
-                <h2>${athlete.Athlete}</h2>
-                <p>${athlete.City}</p>
+                <h2>${title.title}</h2>
+                <p>${title.City}</p>
             </li>
         `;
         })
@@ -42,5 +40,5 @@ const displayData = (athletes) => {
     summerList.innerHTML = htmlString;
 };
 
-loadSummer();
+loadTitles();
 
