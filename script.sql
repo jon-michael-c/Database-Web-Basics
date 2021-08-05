@@ -38,6 +38,3 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 
--- Dropping Database
-DROP DATABASE testdb;
-
