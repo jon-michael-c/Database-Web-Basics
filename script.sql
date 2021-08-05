@@ -32,7 +32,7 @@ CREATE TABLE titles (
 );
 
 LOAD DATA LOCAL INFILE '/var/www/html/Database-Web-Basics/netflix_titles.csv'
-INTO TABLE summer
+INTO TABLE titles
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
