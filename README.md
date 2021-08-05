@@ -23,9 +23,24 @@ From there, `mysql -u root -p` command can be used to enter queries into the dat
 
 
 <h3>Creating Database and Table</h3>
+
 Use `CREATE DATABASE [DBNAME]` to create an database.
 
 ![Screenshot from 2021-08-05 12-56-22](https://user-images.githubusercontent.com/53241212/128390535-5d17d5d2-6840-4ddf-8cee-340a26ea4085.png)
+
+To make a table select a database using `USE [DBNAME]` and `CREATE TABLE [TBNAME]` followed by the table parameters.
+
+![Screenshot from 2021-08-05 13-19-46](https://user-images.githubusercontent.com/53241212/128393737-e3a88962-837b-4565-be53-55c77ad6e1bd.png)
+
+<h3>Inserting records and deleting records</h3>
+
+<h3>Updating records</h3>
+
+
+<h3>Dropping table(s) and database</h3>
+
+<h3>Importing from CSV</h3>
+
 
 # Creating an API Server
 
