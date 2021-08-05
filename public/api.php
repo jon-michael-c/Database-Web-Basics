@@ -4,7 +4,7 @@ $con = mysqli_connect("localhost", "root", "12345", "testdb");
 $response = array();
 
 if($con) {
-    $sql = "SELECT * FROM summer";
+    $sql = "SELECT * FROM titles";
     $result = mysqli_query($con, $sql);
 
     if ($result) {
@@ -12,14 +12,16 @@ if($con) {
     header("Access-Control-Allow-Origin: *");
 	$i=1;
         while($row = mysqli_fetch_assoc($result)) {
-            $response[$i]['Year'] = $row ['Year'];
-            $response[$i]['City'] = $row ['City'];
-            $response[$i]['Discipline'] = $row ['Discipline'];
-            $response[$i]['Athlete'] = $row ['Athlete'];
+            $response[$i]['ID'] = $row ['ID'];
+            $response[$i]['Type'] = $row ['Type'];
+            $response[$i]['Director'] = $row ['Director'];
             $response[$i]['Country'] = $row ['Country'];
-            $response[$i]['Gender'] = $row ['Gender'];
-            $response[$i]['Event'] = $row ['Event'];
-            $response[$i]['Medal'] = $row ['Medal'];
+            $response[$i]['Date_Added'] = $row ['Date_Added'];
+            $response[$i]['Released'] = $row ['Country'];
+            $response[$i]['Rating'] = $row ['Rating'];
+            $response[$i]['Duration'] = $row ['Duration'];
+            $response[$i]['Category'] = $row ['Category'];
+            $response[$i]['Descripition'] = $row ['Descripition'];
             $i++;
         }
 
