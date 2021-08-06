@@ -54,7 +54,7 @@ To drop tables and databases, use `DROP TABLE` or `DROP DATABASE`.
 Putting a csv into a table set can be completed by using SQL's `LOAD DATA LOCAL INFILE` query. First you must create the table on which you are placing the data into. Then specify the file location and enter the proper csv parameters. 
 <br/>
 <br/>
-For example, in this project, a csv file was importing from <a href="https://www.kaggle.com/shivamb/netflix-shows">Kaggle<a> with Netflix titles data. This file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/summer.csv"> here </a> in the repository.
+For example, in this project, a csv file was importing from <a href="https://www.kaggle.com/shivamb/netflix-shows">Kaggle<a> with Netflix titles data. This file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/netflix_titles.csv"> here </a> in the repository.
   
   
 <pre><code>CREATE TABLE summer (
