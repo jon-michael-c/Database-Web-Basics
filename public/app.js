@@ -7,10 +7,10 @@ let titleData = [];
 searchBar.addEventListener('keyup', (e) => {
     const target = e.target.value;
     const filteredtitles = titleData.filter( (title) => {
-        return title.title.includes(target) || title.country.includes(target);
+        return title.Title.includes(target);
     });
 
-    console.log(filteredtitles);
+    displayData(filteredtitles);
 });
 
 // Grab API
@@ -19,7 +19,7 @@ const loadTitles = async () => {
         const res = await fetch('http://34.121.233.142/Database-Web-Basics/public/read.php');
         titleData = await res.json();
         console.log(titleData);
-        displayData(titleData);
+    
     } catch (err) {
         console.error(err);
     }
@@ -31,8 +31,8 @@ const displayData = (titles) => {
         .map((title) => {
             return `
             <li class="entry">
-                <h2>${title.title}</h2>
-                <p>${title.City}</p>
+                <h2>${title.Title}</h2>
+                <p>${title.Cast}</p>
             </li>
         `;
         })
