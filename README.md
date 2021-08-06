@@ -57,19 +57,22 @@ Putting a csv into a table set can be completed by using SQL's `LOAD DATA LOCAL 
 For example, in this project, a csv file was importing from <a href="https://www.kaggle.com/shivamb/netflix-shows">Kaggle<a> with Netflix titles data. This file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/netflix_titles.csv"> here </a> in the repository.
   
   
-<pre><code>CREATE TABLE summer (
-        Year INT NOT NULL,
-        City VARCHAR(255) NOT NULL,
-        Sport VARCHAR(255) NOT NULL,
-        Discipline VARCHAR(255) NOT NULL,
-        Athlete VARCHAR(255) NOT NULL ,
-        Country VARCHAR(255) NOT NULL,
-        Gender VARCHAR(255) NOT NULL,
-        Event VARCHAR(255) NOT NULL,
-        Medal VARCHAR(255) NOT NULL
+<pre><code>CREATE TABLE titles (
+        ID VARCHAR(700) NOT NULL,
+        Form VARCHAR(700) NOT NULL,
+        Title VARCHAR(700) NOT NULL,
+        Director VARCHAR(700) NOT NULL,
+        Cast VARCHAR(700) NOT NULL,
+        Country VARCHAR(700) NOT NULL,
+        Added VARCHAR(700) NOT NULL,
+        Released VARCHAR(700) NOT NULL,
+        Rating VARCHAR(700) NOT NULL,
+        Duration VARCHAR(700) NOT NULL,
+        Category VARCHAR(700) NOT NULL,
+        Descripition VARCHAR(1000) NOT NULL
 );
 
-LOAD DATA LOCAL INFILE '/var/www/html/Database-Web-Basics/summer.csv'
+LOAD DATA LOCAL INFILE '/var/www/html/Database-Web-Basics/netflix_titles.csv'
 INTO TABLE summer
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
