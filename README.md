@@ -2,9 +2,9 @@
 <img src="https://user-images.githubusercontent.com/53241212/128379975-4fe90fe8-c277-49bb-abc3-400d041e996a.jpg" width=700px text-align="center" >
 <h2>Tasks</h2>
 <ol>
-  <li><a href="#creating-a-database">Creating a simple database</a></li>
-  <li><a href="#creating-an-api-server">Setting up an API server</a></li>
-  <li><a href="#deploying-to-a-server">Deploying a webpage</a></li>
+  <li><a href="#creating-a-database">Createa simple database</a></li>
+  <li><a href="#creating-an-api-server">Set up an API server</a></li>
+  <li><a href="#deploying-to-a-server">Deploy to a server </a></li>
 </ol>
 
 This project will use a LAMP stack for the web application. The goal of this application is to search Netflix titles from an API made from an database. 
@@ -61,7 +61,7 @@ To drop tables and databases, use `DROP TABLE` or `DROP DATABASE`.
 Putting a csv into a table set can be completed by using SQL's `LOAD DATA LOCAL INFILE` query. First you must create the table on which you are placing the data into. Then specify the file location and enter the proper csv parameters. 
 <br/>
 <br/>
-For example, in this project, a csv file was importing from <a href="https://www.kaggle.com/shivamb/netflix-shows">Kaggle<a> with Netflix titles data. This file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/netflix_titles.csv"> here </a> in the repository.
+For example, in this project, a csv file was imported from <a href="https://www.kaggle.com/shivamb/netflix-shows">Kaggle<a> with Netflix titles data. This file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/netflix_titles.csv"> here </a> in the repository.
   
   
 <pre><code>CREATE TABLE titles (
