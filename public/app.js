@@ -31,8 +31,21 @@ const displayData = (titles) => {
         .map((title) => {
             return `
             <li class="entry">
-                <h2>${title.Title}</h2>
-                <p>${title.Cast}</p>
+                <div class="header">
+                    <p>${title.Form}</p>
+                    <p> | </p>
+                    <p>${title.Duration}</p>
+                </div>
+                <div class="title">
+                    <h2>${title.Title}</h2>
+                    <p>${title.Released}</p>
+                    <p>${title.Rating}</p>
+                </div>
+                <p>${title.Descripition}</p>
+                <div class="cast">
+                    <p><b>Director(s):</b> ${title.Director}</p>
+                    <p><b>Cast:</b> ${title.Cast}</p>
+                </div>
             </li>
         `;
         })

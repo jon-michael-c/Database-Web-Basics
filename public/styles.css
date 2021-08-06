@@ -31,8 +31,39 @@ h1 {
 
 #title-list li {
     background-color: rgba(0, 0, 0, 0.582);
-    margin: 10px;
-    padding: 100px;
+    margin: 10px 50px 10px 50px;
+    padding: 50px;
     border-radius: 10px;
     list-style: none;
+}
+
+.header {
+    display: flex;
+}
+
+.header p {
+    margin: 0 5px 0 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 5px 0;
+    padding: 5px 0 5px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+}
+
+.title p {
+    margin: 0 10px 0 10px;
+    font-size: 1.2rem;
+}
+
+.cast {
+    margin: 10px 0 10px 0;
+    font-size: 0.9rem;
+}
+
+.cast p {
+    margin: 5px 0 5px 0;
 }
