@@ -2,9 +2,9 @@
 <img src="https://user-images.githubusercontent.com/53241212/128379975-4fe90fe8-c277-49bb-abc3-400d041e996a.jpg" width=700px text-align="center" >
 <h2>Tasks</h2>
 <ol>
-  <li><a href="#creating-a-database">Createa simple database</a></li>
+  <li><a href="#creating-a-database">Create a simple database</a></li>
   <li><a href="#creating-an-api-server">Set up an API server</a></li>
-  <li><a href="#deploying-to-a-server">Deploy to a server </a></li>
+  <li><a href="#webpage-and-deploying-to-a-server">Create a webpage and deploy to a server </a></li>
 </ol>
 
 This project will use a LAMP stack for the web application. The goal of this application is to search Netflix titles from an API made from an database. 
@@ -94,11 +94,28 @@ IGNORE 1 ROW
 
 # Creating an API Server
 
-# Deploying to a Server
+# Webpage and Deploying to a Server
+
+To interact with the data within an API on a webpage, we must fetch it's content with a javascript function. 
+<pre><code>
+const loadTitles = async () => {
+    try {
+        const res = await fetch('http://34.121.233.142/Database-Web-Basics/public/read.php');
+        titleData = await res.json();
+        console.log(titleData);
+    
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+</code></pre>
+  
+We can use this data to create an event listener function where it will display the results based on the input from the user. Link the <a href-"https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/app.js">script</a> to the <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/index.html">html</a> and <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/styles.css">style</a> with css. 
 
 For deployment of the web app, Google Cloud Platform was used as a hosting service. The platform allows virtual machine instances to be run on their network. This particular web application is hosted on a linux(ubuntu) VM instance running an apache server. <br/>
   
-All project files were created in the server directory on the linux machine. An html file lies in the parent folder for when a client enters the server it redirects to the <a href="https://github.com/jon-michael-c/Database-Web-Basics/tree/main/public">public folder</a> where the web app's main contents reside. <br />
+All project files were created in the server directory on the linux machine. A html file lies in the parent folder for when a client enters the server it redirects to the <a href="https://github.com/jon-michael-c/Database-Web-Basics/tree/main/public">public folder</a> where the web app's main contents reside. <br />
 
  The apache server address is <a href="http://34.121.233.142">http://34.121.233.142</a>
   
