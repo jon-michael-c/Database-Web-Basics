@@ -93,7 +93,9 @@ IGNORE 1 ROW
 
 
 # Creating an API Server
-
+An Rest API Server was created fron the Netflix title table in the database.
+  
+  
 # Webpage and Deploying to a Server
 
 To interact with the data within an API on a webpage, we must fetch it's content with a javascript function. 
