@@ -1,7 +1,7 @@
 # Database and Web Basics
 <img src="https://user-images.githubusercontent.com/53241212/128379975-4fe90fe8-c277-49bb-abc3-400d041e996a.jpg" width=600px text-align="center" >
 
-Creating a simple database, setting up an API server, and deploying a webpage. This project will use a LAMP stack for the web application.
+Creating a simple database, setting up an API server, and deploying a webpage. This project will use a LAMP stack for the web application. The goal of this application is to search Netflix titles from an API made from an database. 
 <h3>Technologies Used for this Project</h3>
 <ul>
   <li><a href="https://ubuntu.com/">Linux(Ubuntu)</a></li>
