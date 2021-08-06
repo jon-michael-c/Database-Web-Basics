@@ -111,7 +111,7 @@ const loadTitles = async () => {
 
 </code></pre>
   
-We can use this data to create an event listener function where it will display the results based on the input from the user. Link the <a href-"https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/app.js">script</a> to the <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/index.html">html</a> and <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/styles.css">style</a> with css. 
+We can use this data to create an event listener function where it will display the results based on the input from the user. Link the <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/app.js">script</a> to the <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/index.html">html</a> and <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/styles.css">style</a> with css. 
 
 For deployment of the web app, Google Cloud Platform was used as a hosting service. The platform allows virtual machine instances to be run on their network. This particular web application is hosted on a linux(ubuntu) VM instance running an apache server. <br/>
   
