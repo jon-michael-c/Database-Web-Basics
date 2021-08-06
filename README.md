@@ -95,6 +95,12 @@ IGNORE 1 ROW
 # Creating an API Server
 
 # Deploying to a Server
+
+For deployment of the web app, Google Cloud Platform was used as a hosting service. The platform allows virtual machine instances to be run on their network. This particular web application is hosted on a linux(ubuntu) VM instance running an apache server. <br/>
+  
+All project files were created in the server directory on the linux machine. An html file lies in the parent folder for when a client enters the server it redirects to the <a href="https://github.com/jon-michael-c/Database-Web-Basics/tree/main/public">public folder</a> where the web app's main contents reside. <br />
+
+ The apache server address is <a href="http://34.121.233.142">http://34.121.233.142</a>
   
 ![Screenshot from 2021-08-05 21-30-21](https://user-images.githubusercontent.com/53241212/128442273-b9535275-a75e-4a4b-a536-bc62cae73642.png)
 
