@@ -94,6 +94,36 @@ IGNORE 1 ROW
 
 # Creating an API Server
 An Rest API Server was created fron the Netflix title table in the database. The server was created using PHP to convert the MySQL table data into JSON format for an user to access.   
+  
+<pre><code>
+<?php
+    // API Headers
+    header("Content-type:application/json");
+    header("Access-Control-Allow-Origin: *");
+    // Connect to Database
+    $con = mysqli_connect("localhost", "root", "12345", "testdb");
+    
+    // If no connection, display error.
+    if(!$con){
+    die('Could not connect: '.mysqli_error());
+    }
+    
+    //Select Table
+    $result = mysqli_query($con, "SELECT * FROM titles");
+    
+    while($row = mysqli_fetch_assoc($result)){
+        $output[]=$row;
+    }
+    
+    //Output in JSON Format.
+    print(json_encode($output, JSON_PRETTY_PRINT));
+    
+    mysqli_close($con);
+?>
+</code></pre>
+ 
+  <h3>Link to the php file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/read.php"></a> in the repository.
+The API contains 
 # Webpage and Deploying to a Server
 
 To interact with the data within an API on a webpage, we must fetch it's content with a javascript function. 
