@@ -93,9 +93,7 @@ IGNORE 1 ROW
 
 
 # Creating an API Server
-An Rest API Server was created fron the Netflix title table in the database.
-  
-  
+An Rest API Server was created fron the Netflix title table in the database. The server was created using PHP to convert the MySQL table data into JSON format for an user to access.   
 # Webpage and Deploying to a Server
 
 To interact with the data within an API on a webpage, we must fetch it's content with a javascript function. 
