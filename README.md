@@ -95,9 +95,9 @@ IGNORE 1 ROW
 # Creating an API Server
 An Rest API Server was created fron the Netflix title table in the database. The server was created using PHP to convert the MySQL table data into JSON format for an user to access.   
   
-<pre><code>
+````
 <?php
-    // API Headers
+       // API Headers
     header("Content-type:application/json");
     header("Access-Control-Allow-Origin: *");
     // Connect to Database
@@ -120,10 +120,23 @@ An Rest API Server was created fron the Netflix title table in the database. The
     
     mysqli_close($con);
 ?>
-</code></pre>
+````
  
-  <h3>Link to the php file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/read.php"></a> in the repository.
-The API contains 
+  <h3>Link to the php file can be found <a href="https://github.com/jon-michael-c/Database-Web-Basics/blob/main/public/read.php">here</a> in the repository.</h3>
+The API contains 12 attributes of titles on netflix.
+<ol>
+  <li>ID - Neflix ID</li>
+  <li>Form - Movie or TV Show</li>
+  <li>Title - Name</li>
+  <li>ID</li>
+  <li>ID</li>
+  <li>ID</li>
+  <li>ID</li>
+  <li>ID</li>
+  <li>ID</li>
+  <li>ID</li>
+</ol>
+    
 # Webpage and Deploying to a Server
 
 To interact with the data within an API on a webpage, we must fetch it's content with a javascript function. 
