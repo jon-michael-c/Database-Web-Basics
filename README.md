@@ -128,13 +128,15 @@ The API contains 12 attributes of titles on netflix.
   <li>ID - Neflix ID</li>
   <li>Form - Movie or TV Show</li>
   <li>Title - Name</li>
-  <li>ID</li>
-  <li>ID</li>
-  <li>ID</li>
-  <li>ID</li>
-  <li>ID</li>
-  <li>ID</li>
-  <li>ID</li>
+  <li>Director - Director(s) of the film</li>
+  <li>Cast - Cast of the film</li>
+  <li>Country - Country in which it was filmed</li>
+  <li>Added - Date it was added to Netflix</li>
+  <li>Released - Year film was released</li>
+  <li>Rating - Suitability for audiences</li>
+  <li>Duration - Duration of the film</li>
+  <li>Category - Genre Tag(s)</li>
+  <li>Descripition - Short synopsis</li>
 </ol>
     
 # Webpage and Deploying to a Server
