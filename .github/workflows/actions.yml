@@ -37,7 +37,7 @@ jobs:
           host: 34.121.233.142
           username: admin1
           key: ${{secrets.GCP_SSH}}
-          pass: 12345
+          password: 12345
           script: |
             cd /var/www/html/
     
