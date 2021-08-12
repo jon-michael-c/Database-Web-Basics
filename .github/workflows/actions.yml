@@ -37,6 +37,7 @@ jobs:
           host: 34.121.233.142
           username: admin1
           script: |
+            cd /var/www/html/Database-Web-Basics
             git pull
           
           
