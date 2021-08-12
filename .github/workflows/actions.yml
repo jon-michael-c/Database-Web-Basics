@@ -40,7 +40,9 @@ jobs:
           # Hostname or IP to add to the known hosts file
           ssh-host: 34.121.233.142
           # Port for key-scanning the server
-          script: |
+      # Deploy
+      - name: Deploy
+        run: |
             cd /var/www/html/Database-Web-Basics/
             git pull
           
