@@ -39,7 +39,8 @@ jobs:
           key: ${{secrets.GCP_SSH}}
           passphrase: 12345
           script: |
-            cd /var/www/html/
+            cd /var/www/html/Database-Web-Basics/
+            sudo git pull
     
             
           
