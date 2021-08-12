@@ -38,11 +38,10 @@ jobs:
           user: admin1
           key: ${{secrets.GCP_SSH}}
           pass: 12345
-      # Deploy
-      - name: Deploy
-        run: |
-            cd /var/www/html/Database-Web-Basics/
-            git pull
+          last_ssh: |
+            cd /var/www/html/
+    
+            
           
           
           
